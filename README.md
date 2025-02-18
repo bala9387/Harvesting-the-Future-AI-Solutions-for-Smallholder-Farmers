@@ -1,1 +1,0 @@
-# Harvesting-the-Future-AI-Solutions-for-Smallholder-Farmers
