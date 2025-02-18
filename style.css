@@ -1,0 +1,199 @@
+body {
+      font-family: Arial, sans-serif;
+      background-image: url("/storage/emulated/0/farmers/darker_image.jpg");
+      background-color: black;
+    }
+
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: linear-gradient(90deg, #17a589, #3498db); /* Green to Blue */
+      color: black;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: black;
+      transition: color 0.3s;
+      font-weight: bolder;
+    }
+
+    .nav-links li a:hover {
+      color: cyan;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger .bar {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      transition: 0.3s;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: linear-gradient(90deg, #17a589, #e67e22); /* Green to Orange */
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 150px;
+        padding: 10px;
+        border-radius: 5px;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        pointer-events: none;
+      }
+
+      .nav-links.active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      /* Hamburger animation */
+      .hamburger.open .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      .hamburger.open .bar:nth-child(2) {
+        opacity: 0;
+      }
+
+      .hamburger.open .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+    }
+
+    hr {
+      border: 2px solid black;
+    }
+.image{
+      background-color: lightgray;
+      border-width: 3px;
+      border-color: #3498db;
+      border-style: dashed;
+      color: green;
+      text-align: center;
+      margin: 10px 20px;
+      padding: 60px 20%;
+      display: flex;
+      opacity: 1;
+}
+
+.progress1-bar {
+  height: 20px;
+  background-color: #4caf50;
+  background: linear-gradient(45deg, #56ab2f, #a8e063); /* Diagonal gradient */
+  width: 0%;
+  border-radius: 10px;
+  display: 70%;
+}
+
+.progress1-text {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 2px 5px;
+}
+
+.irrigation{
+  padding-left: 20px;
+  color: black;
+}
+.fertilizer{
+  padding-left: 20px;
+  color: black;
+}
+
+.irrigation-container {
+  width: 80%;
+  max-width: 600px;
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 5px;
+  position: relative;
+}
+.fertilizer-container {
+  width: 80%;
+  max-width: 600px;
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 5px;
+  position: relative;
+}
+
+.progress2-bar {
+  height: 20px;
+  background: linear-gradient(45deg, #56ab2f, #a8e063); /* Diagonal gradient */
+  width: 0%;
+  border-radius: 10px;
+}
+
+.progress2-text {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 2px 5px;
+}
+
+.irrigation-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+      color: black;
+      border: none;
+  border-radius: 5px;
+}
+.fertilizer-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+#status{
+  font-weight: bolder;
+  color: black;
+  
+}
+
