@@ -1,0 +1,192 @@
+/* General Reset */
+
+body{
+  font-family: Arial, sans-serif;
+  background-image: url('/storage/emulated/0/farmers/3667299~2.png');
+}
+
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  
+  
+  color: black;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+  font-weight: bolder;
+}
+
+.nav-links li a:hover {
+  color: cyan;
+  
+}
+
+/* Hamburger Menu for Small Screens */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background: linear-gradient(90deg, #2575fc,#6a11cb);
+
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+hr{
+  border:2px solid black;
+  border-color: black;
+}
+.input{
+  width:65%;
+  align:center;
+  padding:10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 20px;
+}
+.search-button{
+  margin-top: 10px;
+  margin-left:10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+.progress1-bar {
+  height: 20px;
+  background-color: #4caf50;
+  background: linear-gradient(45deg, #56ab2f, #a8e063); /* Diagonal gradient */
+  width: 0%;
+  border-radius: 10px;
+  display: 70%;
+}
+
+.progress1-text {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 2px 5px;
+}
+
+.irrigation{
+  padding-left: 20px;
+  color: black;
+}
+.fertilizer{
+  padding-left: 20px;
+  color: black;
+}
+
+.irrigation-container {
+  width: 80%;
+  max-width: 600px;
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 5px;
+  position: relative;
+}
+.fertilizer-container {
+  width: 80%;
+  max-width: 600px;
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 5px;
+  position: relative;
+}
+
+.progress2-bar {
+  height: 20px;
+  background: linear-gradient(45deg, #56ab2f, #a8e063); /* Diagonal gradient */
+  width: 0%;
+  border-radius: 10px;
+}
+
+.progress2-text {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 2px 5px;
+}
+
+.irrigation-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+.fertilizer-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+#status{
+  font-weight: bolder;
+  color: black;
+  
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>FARMER</title>
+</head>
+<body>
+  
+  <nav class="navbar">
+    <div class="logo">FARMER</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#help">help</a></li>
+    </ul>
+    <div class="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
+  <hr>
+  <div class="search">
+    <input type="text" placeholder="search..." class="input">
+      <button class="search-button">search</button>
+  </div>
+  <div id="status">
+    <h2>STATUS</h2>
+  </div>
+    <h3 class="irrigation">Irrigation</h3>
+    
+
+  <div class="irrigation-container">
+    <div class="progress1-bar" id="progress1-bar"></div>
+    <div class="progress1-text" id="progress1-text">0%</div>
+    
+  </div>
+    <button onclick="irrigation()" class="irrigation-button">CHECK</button>
+    
+
+    <h3 class="fertilizer">Fertilizer</h3>
+    
+    
+  <div class="fertilizer-container">
+    <div class="progress2-bar" id="progress2-bar"></div>
+    <div class="progress2-text" id="progress2-text">0%</div>
+    
+  </div>
+       <button onclick="fertilizer()" class="fertilizer-button">CHECK</button>
+   
+    
+
+    
+    
+  <script src="script.js"></script>
+</body>
+</html>
